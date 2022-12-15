@@ -71,7 +71,7 @@
   height: 60vh;
 }
 
-.length, .volume, .mass {
+#length, #volume, #mass {
   background-color: #273549;
   border-radius: 5px;
   padding: 1em 3em;
@@ -83,7 +83,7 @@
   align-items: center;
 }
 
-.length p, .mass p, .volume p {
+#length p, #mass p, #volume p {
   color: #CCC1FF;
   font-size: 1.25em;
   font-weight: 600;
