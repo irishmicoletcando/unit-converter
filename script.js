@@ -19,7 +19,12 @@ convertBtn.addEventListener("click", function() {
   const metersToFeet = (inputUnit.value * 3.281)
   const feetToMeters = (inputUnit.value / 3.281);
 
-  length.innerText = `${inputUnit.value} meters = ${metersToFeet} feet | ${inputUnit.value} feet = ${feetToMeters.toFixed(3)} meters`
+  // checks input if it is 0
+  if ( metersToFeet === 0 && feetToMeters === 0 ) {
+    length.innerText = `${inputUnit.value} meter = ${metersToFeet} foot | ${inputUnit.value} foot = ${feetToMeters} meter`
+  } else {
+    length.innerText = `${inputUnit.value} meters = ${metersToFeet} feet | ${inputUnit.value} feet = ${feetToMeters.toFixed(3)} meters`
+  }
 
 })
 
