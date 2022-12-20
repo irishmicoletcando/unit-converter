@@ -71,7 +71,7 @@
   height: 60vh;
 }
 
-#length, #volume, #mass {
+#length-container, #volume-container, #mass-container {
   background-color: #273549;
   border-radius: 5px;
   padding: 1em 3em;
@@ -84,7 +84,7 @@
   flex-direction: column;
 }
 
-#length > p, #mass> p, #volume > p {
+#length-container > p, #mass-container > p, #volume-container > p {
   color: #CCC1FF;
   font-size: 1.25em;
   font-weight: 600;
@@ -92,7 +92,7 @@
   margin-bottom: 0.5em;
 }
 
-#length > .conversion-text, #volume > .conversion-text, #mass > .conversion-text {
+#length-container > .conversion-text, #volume-container > .conversion-text, #mass-container > .conversion-text {
   color: #FFFFFF;
   font-size: 1rem;
 }
