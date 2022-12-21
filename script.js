@@ -17,8 +17,8 @@ conversion units
 convertBtn.addEventListener("click", function() {
   const input = inputUnit.value;
   // length conversion
-  const metersToFeet = (input * 3.281)
-  const feetToMeters = (input / 3.281);
+  const metersToFeet = input * 3.281;
+  const feetToMeters = input / 3.281;
 
   // checks input if it is 0
   if ( input == 0 ) {
@@ -30,34 +30,33 @@ convertBtn.addEventListener("click", function() {
   }
 
   //  volume conversion
-  const literToGallon = (input * 0.264);
-  const gallonToLiter = (input / 0.264);
+  const literToGallon = input * 0.264;
+  const gallonToLiter = input / 0.264;
 
   // checks input if it is 0
-  if ( literToGallon === 0 && gallonToLiter === 0 ) {
+  if ( input == 0 ) {
     volume.innerText = `${input} liter = ${literToGallon} gallon | ${input} gallon = ${gallonToLiter} liter`
+  } else if ( input == 1) {
+    volume.innerText = `${input} liter = ${literToGallon} gallons | ${input} gallon = ${gallonToLiter.toFixed(3)} liters`
   } else {
     volume.innerText = `${input} liters = ${literToGallon} gallons | ${input} gallons = ${gallonToLiter.toFixed(3)} gallons`
   }
 
+  //  mass conversion
+  const kilogramToPound = input * 2.204;
+  const poundToKilogram = input / 2.204;
 
+  // checks input if it is 0
+  if ( input == 0 ) {
+    mass.innerText = `${input} kilogram = ${kilogramToPound} pound | ${input} pound = ${poundToKilogram} kilogram`
+  } else if ( input == 1) {
+    mass.innerText = `${input} kilogram = ${kilogramToPound} pounds | ${input} pound = ${poundToKilogram.toFixed(3)} kilograms`
+  } else {
+    mass.innerText = `${input} kilograms = ${kilogramToPound} pounds | ${input} pounds = ${poundToKilogram.toFixed(3)} kilograms`
+  }
 })
 
 // // clear input field and conversion values
 // clearBtn.addEventListener("click", function() {
 //   inputUnit.innerText = "";
 // })
-
-
-// meters to feet
-// let metersToFeet = inputUnit * 3.281;
-// // feet to meters
-// let feetToMeters = inputUnit / 3.281;
-// // liter to gallon
-// let literToGallon = inputUnit * 0.264;
-// // gallon to liter 
-// let gallonToLiter = inputUnit / 0.264;
-// // kilogram to pound
-// let kilogramToPound = inputUnit * 2.204;
-// // pount to kilogram
-// let poundToKilogram = inputUnit / 2.204;
