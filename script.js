@@ -56,7 +56,10 @@ convertBtn.addEventListener("click", function() {
   }
 })
 
-// // clear input field and conversion values
-// clearBtn.addEventListener("click", function() {
-//   inputUnit.innerText = "";
-// })
+// clear input field and conversion values
+clearBtn.addEventListener("click", function() {
+  document.getElementById('convert-input').value = "";
+  length.innerText = "";
+  volume.innerText = "";
+  mass.innerText = "";
+})
