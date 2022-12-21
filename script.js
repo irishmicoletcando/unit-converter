@@ -24,9 +24,9 @@ convertBtn.addEventListener("click", function() {
   if ( input == 0 ) {
     length.innerText = `${input} meter = ${metersToFeet} foot | ${input} foot = ${feetToMeters} meter`
   } else if ( input == 1 ){
-    length.innerText = `${input} meter = ${metersToFeet} feet | ${input} foot = ${feetToMeters.toFixed(3)} meters`
+    length.innerText = `${input} meter = ${metersToFeet.toFixed(3)} feet | ${input} foot = ${feetToMeters.toFixed(3)} meters`
   } else {
-    length.innerText = `${input} meters = ${metersToFeet} feet | ${input} feet = ${feetToMeters.toFixed(3)} meters`
+    length.innerText = `${input} meters = ${metersToFeet.toFixed(3)} feet | ${input} feet = ${feetToMeters.toFixed(3)} meters`
   }
 
   //  volume conversion
@@ -37,9 +37,9 @@ convertBtn.addEventListener("click", function() {
   if ( input == 0 ) {
     volume.innerText = `${input} liter = ${literToGallon} gallon | ${input} gallon = ${gallonToLiter} liter`
   } else if ( input == 1) {
-    volume.innerText = `${input} liter = ${literToGallon} gallons | ${input} gallon = ${gallonToLiter.toFixed(3)} liters`
+    volume.innerText = `${input} liter = ${literToGallon.toFixed(3)} gallons | ${input} gallon = ${gallonToLiter.toFixed(3)} liters`
   } else {
-    volume.innerText = `${input} liters = ${literToGallon} gallons | ${input} gallons = ${gallonToLiter.toFixed(3)} gallons`
+    volume.innerText = `${input} liters = ${literToGallon.toFixed(3)} gallons | ${input} gallons = ${gallonToLiter.toFixed(3)} gallons`
   }
 
   //  mass conversion
@@ -50,9 +50,9 @@ convertBtn.addEventListener("click", function() {
   if ( input == 0 ) {
     mass.innerText = `${input} kilogram = ${kilogramToPound} pound | ${input} pound = ${poundToKilogram} kilogram`
   } else if ( input == 1) {
-    mass.innerText = `${input} kilogram = ${kilogramToPound} pounds | ${input} pound = ${poundToKilogram.toFixed(3)} kilograms`
+    mass.innerText = `${input} kilogram = ${kilogramToPound.toFixed(3)} pounds | ${input} pound = ${poundToKilogram.toFixed(3)} kilograms`
   } else {
-    mass.innerText = `${input} kilograms = ${kilogramToPound} pounds | ${input} pounds = ${poundToKilogram.toFixed(3)} kilograms`
+    mass.innerText = `${input} kilograms = ${kilogramToPound.toFixed(3)} pounds | ${input} pounds = ${poundToKilogram.toFixed(3)} kilograms`
   }
 })
 
