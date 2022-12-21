@@ -15,16 +15,31 @@ conversion units
 
 // show converted values when button is clicked
 convertBtn.addEventListener("click", function() {
+  const input = inputUnit.value;
   // length conversion
-  const metersToFeet = (inputUnit.value * 3.281)
-  const feetToMeters = (inputUnit.value / 3.281);
+  const metersToFeet = (input * 3.281)
+  const feetToMeters = (input / 3.281);
 
   // checks input if it is 0
-  if ( metersToFeet === 0 && feetToMeters === 0 ) {
-    length.innerText = `${inputUnit.value} meter = ${metersToFeet} foot | ${inputUnit.value} foot = ${feetToMeters} meter`
+  if ( input == 0 ) {
+    length.innerText = `${input} meter = ${metersToFeet} foot | ${input} foot = ${feetToMeters} meter`
+  } else if ( input == 1 ){
+    length.innerText = `${input} meter = ${metersToFeet} feet | ${input} foot = ${feetToMeters.toFixed(3)} meters`
   } else {
-    length.innerText = `${inputUnit.value} meters = ${metersToFeet} feet | ${inputUnit.value} feet = ${feetToMeters.toFixed(3)} meters`
+    length.innerText = `${input} meters = ${metersToFeet} feet | ${input} feet = ${feetToMeters.toFixed(3)} meters`
   }
+
+  //  volume conversion
+  const literToGallon = (input * 0.264);
+  const gallonToLiter = (input / 0.264);
+
+  // checks input if it is 0
+  if ( literToGallon === 0 && gallonToLiter === 0 ) {
+    volume.innerText = `${input} liter = ${literToGallon} gallon | ${input} gallon = ${gallonToLiter} liter`
+  } else {
+    volume.innerText = `${input} liters = ${literToGallon} gallons | ${input} gallons = ${gallonToLiter.toFixed(3)} gallons`
+  }
+
 
 })
 
