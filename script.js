@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 const convertBtn = document.getElementById("convert-btn");
 const inputUnit = document.getElementById("convert-input");
@@ -20,7 +20,7 @@ convertBtn.addEventListener("click", function() {
   const metersToFeet = input * 3.281;
   const feetToMeters = input / 3.281;
 
-  // checks input if it is 0
+  // checks input to be converted
   if ( input == 0 ) {
     length.innerText = `${input} meter = ${metersToFeet} foot | ${input} foot = ${feetToMeters} meter`
   } else if ( input == 1 ){
@@ -33,7 +33,7 @@ convertBtn.addEventListener("click", function() {
   const literToGallon = input * 0.264;
   const gallonToLiter = input / 0.264;
 
-  // checks input if it is 0
+  // checks input to be converted
   if ( input == 0 ) {
     volume.innerText = `${input} liter = ${literToGallon} gallon | ${input} gallon = ${gallonToLiter} liter`
   } else if ( input == 1) {
@@ -46,7 +46,7 @@ convertBtn.addEventListener("click", function() {
   const kilogramToPound = input * 2.204;
   const poundToKilogram = input / 2.204;
 
-  // checks input if it is 0
+  // checks input to be converted
   if ( input == 0 ) {
     mass.innerText = `${input} kilogram = ${kilogramToPound} pound | ${input} pound = ${poundToKilogram} kilogram`
   } else if ( input == 1) {
