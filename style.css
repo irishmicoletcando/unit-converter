@@ -10,6 +10,7 @@
 
 .main-container {
   height: 100vh;
+  overflow: hidden;
 }
 
 /* input field start */
@@ -103,7 +104,21 @@
 /* conversion boxes end */
 
 @media (max-width: 760px) {
+  .input-div p {
+    text-align: center;
+  }
+
   #length-container, #volume-container, #mass-container {
-    width: 500px;
+    width: 15em;
+  }
+}
+
+@media (max-width: 760px) {
+  .input-div p {
+    text-align: center;
+  }
+
+  #length-container, #volume-container, #mass-container {
+    width: 15em;
   }
 }
