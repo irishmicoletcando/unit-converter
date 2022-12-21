@@ -109,16 +109,16 @@
   }
 
   #length-container, #volume-container, #mass-container {
-    width: 15em;
+    width: 25em;
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 520px) {
   .input-div p {
     text-align: center;
   }
 
   #length-container, #volume-container, #mass-container {
-    width: 15em;
+    width: 20em;
   }
 }
