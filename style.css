@@ -54,6 +54,10 @@
   font-size: 1em;
 }
 
+#clear-btn {
+  margin-left: 1.5em;
+}
+
 #convert-btn:hover, #clear-btn:hover {
   background-color: #ECECEC;
   cursor: pointer;
@@ -64,10 +68,10 @@
 .conversion-box {
   background-color: #1F2937;
   display: flex;
+  padding: 2em 0;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2em 0;
   height: 60vh;
 }
 
@@ -97,3 +101,9 @@
   font-size: 1rem;
 }
 /* conversion boxes end */
+
+@media (max-width: 760px) {
+  #length-container, #volume-container, #mass-container {
+    width: 500px;
+  }
+}
